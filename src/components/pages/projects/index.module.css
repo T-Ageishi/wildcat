@@ -27,3 +27,8 @@
 		minmax(calc(var(--column-width) / 1.618), 1fr)
 	);
 }
+
+.footer {
+	width: 100%;
+	margin-top: auto;
+}

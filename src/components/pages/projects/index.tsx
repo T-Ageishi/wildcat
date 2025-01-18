@@ -1,6 +1,7 @@
 import Header from "@/components/organisms/header";
-import styles from "./index.module.css";
 import NewProjectCard from "@/components/molecules/new-project-card";
+import Footer from "@/components/molecules/footer";
+import styles from "./index.module.css";
 
 export default function ListPage({}: ListPageProps) {
 	return (
@@ -15,6 +16,9 @@ export default function ListPage({}: ListPageProps) {
 					<NewProjectCard />
 				</section>
 			</main>
+			<div className={styles["footer"]}>
+				<Footer />
+			</div>
 		</div>
 	);
 }
