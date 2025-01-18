@@ -11,5 +11,5 @@
 	width: 100%;
 	flex-grow: 1;
 	background-color: var(--color-surface-container-lowest);
-	padding: 24px;
+	padding: 24px 48px;
 }
