@@ -23,7 +23,7 @@
 		background-color: var(--color-surface-dim);
 		z-index: 1;
 		user-select: none;
-		opacity: 0.08;
+		opacity: 0.12;
 	}
 }
 
