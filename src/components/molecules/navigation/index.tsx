@@ -8,7 +8,7 @@ import { clsx } from "clsx";
 
 const navSetting = [
 	{ label: "ホーム", href: "/" },
-	{ label: "プロジェクト一覧", href: "/list" },
+	{ label: "プロジェクト一覧", href: "/projects" },
 ];
 
 export default function Navigation({}: NavigationProps): ReactNode {

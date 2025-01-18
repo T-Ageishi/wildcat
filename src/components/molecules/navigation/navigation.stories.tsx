@@ -20,11 +20,11 @@ export const Home: Story = {
 	},
 };
 
-export const List: Story = {
+export const Projects: Story = {
 	parameters: {
 		nextjs: {
 			navigation: {
-				pathname: "/list",
+				pathname: "/projects",
 			},
 		},
 	},
