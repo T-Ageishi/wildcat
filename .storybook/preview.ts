@@ -13,6 +13,11 @@ const preview: Preview = {
 		nextjs: {
 			appDirectory: true,
 		},
+		options: {
+			storySort: {
+				order: ["Atoms", "Molecules", "Organisms", "Templates", "Pages"],
+			},
+		},
 	},
 };
 
