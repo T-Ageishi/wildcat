@@ -7,17 +7,19 @@ import Link from "next/link";
 export default function Header({}: HeaderProps): ReactNode {
 	return (
 		<header className={styles["header"]}>
-			<Link href={"/"}>
-				<Image
-					className={styles.logo}
-					src="/next.svg"
-					alt="Next.js logo"
-					width={96}
-					height={24}
-					priority
-				/>
-			</Link>
-			<Navigation />
+			<div className={styles["header__contents"]}>
+				<Link href={"/"}>
+					<Image
+						className={styles.logo}
+						src="/next.svg"
+						alt="Next.js logo"
+						width={96}
+						height={24}
+						priority
+					/>
+				</Link>
+				<Navigation />
+			</div>
 		</header>
 	);
 }

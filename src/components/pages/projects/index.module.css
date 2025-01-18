@@ -9,9 +9,11 @@
 
 .main {
 	width: 100%;
+	max-width: var(--app-max-width);
+	padding: var(--app-padding);
 	flex-grow: 1;
 	background-color: var(--color-surface-container-lowest);
-	padding: 24px 48px;
+	margin: 24px auto 0;
 }
 
 .page__cards {

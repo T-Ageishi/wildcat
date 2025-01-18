@@ -33,6 +33,10 @@
 		--is-lg: true;
 	}
 
+	/* アプリケーションの見た目を大まかに整える */
+	--app-max-width: 1200px;
+	--app-padding: 0 24px;
+
 	/* 色 */
 	--color-primary: rgb(65 95 145);
 	--color-surface-tint: rgb(65 95 145);
