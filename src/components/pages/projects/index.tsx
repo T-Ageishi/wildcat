@@ -6,7 +6,11 @@ export default function ListPage({}: ListPageProps) {
 	return (
 		<div className={styles["page"]}>
 			<Header />
-			<main className={styles["page__body"]}>
+			<main className={styles["main"]}>
+				<section>
+					<div>キーワード検索</div>
+					<div>タグでの絞り込み</div>
+				</section>
 				<section className={styles["page__cards"]}>
 					<NewProjectCard />
 				</section>
