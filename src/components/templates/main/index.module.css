@@ -1,0 +1,21 @@
+.container {
+	width: 100%;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.body {
+	width: 100%;
+	max-width: var(--app-max-width);
+	padding: var(--app-padding);
+	flex-grow: 1;
+	background-color: var(--color-surface-container-lowest);
+	margin: 24px auto 0;
+}
+
+.body__contents {
+	padding: 24px;
+}
