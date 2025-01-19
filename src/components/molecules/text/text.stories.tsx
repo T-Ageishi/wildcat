@@ -22,3 +22,24 @@ export const Default: Story = {
 		return <Text value={value} onChange={handleChange} {...args} />;
 	},
 };
+
+export const WithIcon: Story = {
+	args: {
+		placeholder: "Input keywords",
+	},
+	render: (args) => {
+		const [value, setValue] = useState("");
+		const handleChange: ChangeEventHandler<HTMLInputElement> = (event) => {
+			setValue(event.target.value);
+		};
+		const iconName = "search";
+		return (
+			<Text
+				prependIcon={iconName}
+				value={value}
+				onChange={handleChange}
+				{...args}
+			/>
+		);
+	},
+};
