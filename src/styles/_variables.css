@@ -39,6 +39,7 @@
 
 	/* フォントサイズ */
 	--font-sm: 0.875rem;
+	--font-3xl: 1.875rem;
 
 	/* 色 */
 	--color-primary: rgb(65 95 145);
