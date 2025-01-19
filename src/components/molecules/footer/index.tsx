@@ -3,7 +3,7 @@ import styles from "./index.module.css";
 export default function Footer() {
 	return (
 		<footer className={styles["footer"]}>
-			<div>Powered by Next.js</div>
+			<span>2025 H1 MBO, powered by Next.js.</span>
 		</footer>
 	);
 }
