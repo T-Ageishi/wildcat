@@ -1,12 +1,14 @@
 import type { Preview } from "@storybook/react";
 import "@/app/globals.css";
+// @ts-ignore
+import styles from "./index.module.css";
 // noinspection ES6PreferShortImport
 import { notoSansJp } from "../src/styles/font";
 
 const preview: Preview = {
 	decorators: [
 		(Story) => (
-			<div className={notoSansJp.className}>
+			<div className={`${notoSansJp.className} ${styles["container"]}`}>
 				<Story />
 			</div>
 		),
