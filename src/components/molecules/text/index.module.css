@@ -1,0 +1,10 @@
+.text {
+	padding: 8px 16px;
+	border-radius: 4px;
+	border: none;
+	outline: 1px solid rgb(209 213 220);
+
+	&:focus {
+		outline: 2px solid rgb(79 57 246);
+	}
+}
