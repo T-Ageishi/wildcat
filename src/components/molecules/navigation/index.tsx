@@ -7,8 +7,8 @@ import { usePathname } from "next/navigation";
 import { clsx } from "clsx";
 
 const navSetting = [
-	{ label: "ホーム", href: "/" },
-	{ label: "プロジェクト一覧", href: "/projects" },
+	{ label: "Home", href: "/" },
+	{ label: "Projects", href: "/projects" },
 ];
 
 export default function Navigation({}: NavigationProps): ReactNode {

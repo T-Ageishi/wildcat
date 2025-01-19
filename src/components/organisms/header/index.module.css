@@ -1,7 +1,11 @@
 .header {
 	width: 100%;
-	background-color: var(--color-surface);
+	background-color: var(--color-surface-container-lowest);
 	border-bottom: solid 1px var(--color-outline-variant);
+}
+
+.logo {
+	vertical-align: bottom;
 }
 
 .header__contents {
@@ -11,5 +15,5 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	column-gap: 48px;
+	column-gap: 32px;
 }

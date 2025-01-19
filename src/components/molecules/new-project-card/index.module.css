@@ -2,38 +2,31 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: dashed 2px var(--color-outline-variant);
+	border: dashed 2px rgb(209 213 220);
 	transition-duration: 200ms;
 	cursor: pointer;
-	background-color: var(--color-surface);
-	color: var(--color-on-surface-variant);
+	background-color: var(--color-surface-container-lowest);
+	color: var(--color-on-surface);
 
 	&:hover {
-		border: dashed 2px var(--color-outline);
-		color: var(--color-on-surface);
-
-		&::after {
-			content: "";
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			top: 0;
-			left: 0;
-			z-index: 1;
-			background-color: var(--color-surface-dim);
-			opacity: 0.08;
-		}
+		border: dashed 2px rgb(153 161 175);
 	}
 }
 
 .new-project-card__body {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	column-gap: 16px;
 }
 
 .new-project-card__label {
-	font-weight: bold;
-	font-size: 1.5rem;
+	font-weight: 500;
+	font-size: var(--font-sm);
+}
+
+.icon {
+	font-weight: normal;
+	color: rgb(153 161 175);
 }

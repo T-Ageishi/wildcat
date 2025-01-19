@@ -10,11 +10,11 @@ export default function Header({}: HeaderProps): ReactNode {
 			<div className={styles["header__contents"]}>
 				<Link href={"/"}>
 					<Image
-						className={styles.logo}
-						src="/next.svg"
+						className={styles["logo"]}
+						src="/logo.svg"
 						alt="Next.js logo"
-						width={96}
-						height={24}
+						width={32}
+						height={32}
 						priority
 					/>
 				</Link>
