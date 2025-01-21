@@ -16,20 +16,24 @@ export default function Chips({
 }
 
 export function Chip({ label, value, ...props }: ChipProps): ReactNode {
+	const isValidValue = typeof value === "string" || typeof value === "number";
+	const Tag = isValidValue ? "label" : "div";
 	return (
-		<label className={styles["chip"]}>
-			<input
-				type={"checkbox"}
-				value={value}
-				className={styles["chip__checkbox"]}
-				{...props}
-			/>
+		<Tag className={styles["chip"]}>
+			{value && (
+				<input
+					type={"checkbox"}
+					value={value}
+					className={styles["chip__checkbox"]}
+					{...props}
+				/>
+			)}
 			<div>{label}</div>
-		</label>
+		</Tag>
 	);
 }
 
 export type ChipProps = ComponentProps<"input"> & {
-	value: string | number;
+	value?: string | number;
 	label: string;
 };

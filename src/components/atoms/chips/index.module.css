@@ -9,9 +9,12 @@
 	border: solid 1px var(--color-outline-variant);
 	padding: 2px 8px;
 	border-radius: 4px;
-	cursor: pointer;
 	font-size: var(--font-sm);
 	user-select: none;
+
+	&label {
+		cursor: pointer;
+	}
 
 	&:has(.chip__checkbox:checked) {
 		background-color: rgb(57 73 171);
